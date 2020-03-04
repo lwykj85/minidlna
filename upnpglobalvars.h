@@ -172,8 +172,10 @@
 	"http-get:*:audio/x-wav:*," \
 	"http-get:*:audio/x-flac:*," \
 	"http-get:*:audio/x-dsd:*," \
-	"http-get:*:application/ogg:*"
+	"http-get:*:application/ogg:*"\
+	"http-get:*:video/x-pn-realvideo:*"  
 
+	    
 #define DLNA_FLAG_DLNA_V1_5      0x00100000
 #define DLNA_FLAG_HTTP_STALLING  0x00200000
 #define DLNA_FLAG_TM_B           0x00400000
