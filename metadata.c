@@ -862,6 +862,13 @@ GetVideoMetadata(const char *path, const char *name)
 			xasprintf(&m.mime, "video/x-matroska");
 		else if( strcmp(ctx->iformat->name, "flv") == 0 )
 			xasprintf(&m.mime, "video/x-flv");
+		//----添加----  
+		else if( strcmp(ctx->iformat->name, "rm") == 0 )  
+		    xasprintf(&m.mime, "video/x-pn-realvideo");  
+		else if( strcmp(ctx->iformat->name, "rmvb") == 0 )  
+		    xasprintf(&m.mime, "video/x-pn-realvideo");  
+		//---结束----  
+
 		if( m.mime )
 			goto video_no_dlna;
 
